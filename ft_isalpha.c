@@ -1,21 +1,18 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 08:17:49 by asyeo             #+#    #+#             */
+/*   Created: 2025/10/26 08:24:22 by asyeo             #+#    #+#             */
 /*   Updated: 2025/10/27 14:05:35 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <stdlib.h>
-
-/* 1 */
+int ft_isalpha(int c)
+{
+    return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
+}

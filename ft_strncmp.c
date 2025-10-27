@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asyeo <asyeo@student.42.fr>                +#+  +:+       +#+        */
+/*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:58 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/27 10:30:00 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/27 14:05:35 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -23,9 +23,7 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
     while (s1[i] != '\0' && s1[i] == s2[i])
     {
         if (s1[i] == '\0')
-        {
             i = i + 1;
-        }
     }
     return (s1[i] - s2[i]);
 }
