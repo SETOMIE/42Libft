@@ -1,58 +1,38 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 08:19:23 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/27 14:05:35 by asyeo            ###   ########.fr       */
+/*   Created: 2025/09/19 08:11:31 by dcheng            #+#    #+#             */
+/*   Updated: 2025/10/27 14:26:42 by asyeo            ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-    DESCRIPTION:
-    The function converts a string of alphabets/characters into intergers.
-
-    RETURN VALUE:
-    The converted intergers.
-*/
-
-int ft_atoi(char *str)
+int	ft_atoi(const char *nptr)
 {
-    int     i;
-    int     sign;
-    int     result;
+	int				i;
+	unsigned long	res;
+	int				sign;
 
-    i = 0;
-    sign = 1;
-    result = 0;
-    while (str [i] && ((str[i] >= 9 && str[i] <= 13) || str[i] == 32))
-    {
-        i++;
-    }
-    while (str[i] && (str[i] == '-' || str[i] == '+'))
-    {
-        if (str[i] == '-')
-        sign *= -1;
-        {
-            i++;
-        }
-    }
-    while (str[i] && (str[i] >= '0' && str[i] <= '9'))
-    {
-        result = (result * 10) + str[i] - '0';
-        i++;
-    }
-    return  (result * sign);
+	i = 0;
+	res = 0;
+	sign = 1;
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
+		i++;
+	if (nptr[i] == '-' || nptr[i] == '+')
+	{
+		if (nptr[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (nptr[i] && (nptr[i] >= '0' && nptr[i] <= '9'))
+	{
+		res = (res * 10) + nptr[i] - 48;
+		i++;
+	}
+	return (res * sign);
 }
-
-/*int     main(void)
-{
-    char    *str;
-
-    str = " ---+--+1234ab567";
-    printf("%d\n",(ft_atoi(str)));
-}*/
