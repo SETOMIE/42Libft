@@ -17,20 +17,21 @@
 
 */
 
-int     ft_strlen(char *str)
+size_t    ft_strlen(const char *s)
 {
-    int len;
+    size_t    len;
 
     len = 0;
-    while (str[len])
+    while (s[len] != '\0')
+    {
         len++;
-    return (len);
+    }
+    return (l);
 }
 
-/*int   main(void)
+/*int    main(void)
 {
-    char str[] = "Input"
-    int len = ft_strlen(str);
-    printf("Length of string is: %d\n", len);
+    char    str[] = "Jeff the Landshark!";
+    printf("Length of '%s' is: %zu\n", str, ft_strlen(str));
     return (0);
 }*/
