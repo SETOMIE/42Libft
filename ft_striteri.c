@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 08:24:33 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/29 10:25:00 by asyeo            ###   ########.fr       */
+/*   Created: 2025/10/29 09:07:38 by asyeo             #+#    #+#             */
+/*   Updated: 2025/10/29 11:55:09 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-    DESCRIPTION: Function checks for any printable characters (including space).
+    DESCRIPTION: Applies function 'f' on each character
 */
 
-int    ft_isprint(int c)
+void    ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-    return (c >= 32 && c <= 126);
+    
 }

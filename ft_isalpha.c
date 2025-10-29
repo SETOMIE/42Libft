@@ -6,15 +6,20 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 06:17:43 by dcheng            #+#    #+#             */
-/*   Updated: 2025/10/27 14:29:09 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/29 10:24:48 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	DESCRIPTION:  Function checks for an alpahabetical characters, both upper 
+	and lowercase.
+*/
+
 int	ft_isalpha(int c)
 {
-	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122)); //65; 'A' 90; 'Z' 97; 'a' 122; 'z'
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
 		return (1);
 	else
 		return (0);

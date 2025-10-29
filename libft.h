@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 07:44:59 by dcheng            #+#    #+#             */
-/*   Updated: 2025/10/27 14:21:29 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/29 09:17:40 by asyeo            ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -27,11 +27,15 @@ typedef struct s_list
 }					t_list;
 
 char	*ft_itoa(int n);
+
+/* is Functions */
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+
+/* to Funtions */
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 size_t	ft_strlen(const char *s);
@@ -62,7 +66,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-/* bonus functions */
+/* Bonus Functions */
 
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);

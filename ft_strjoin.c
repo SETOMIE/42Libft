@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 08:24:33 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/29 10:25:00 by asyeo            ###   ########.fr       */
+/*   Created: 2025/10/29 09:06:42 by asyeo             #+#    #+#             */
+/*   Updated: 2025/10/29 11:24:14 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-    DESCRIPTION: Function checks for any printable characters (including space).
+    DESCRIPTION: Function allocates with malloc and returns a new string,
+    which is the concatenated from 's1' and 's2'.
 */
 
-int    ft_isprint(int c)
+char    ft_strjoin(char const *s1, char const *s2)
 {
-    return (c >= 32 && c <= 126);
+    
 }

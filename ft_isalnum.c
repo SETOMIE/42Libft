@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asyeo <asyeo@student.42kl.edu.my>          #+#  +:+       +#+        */
+/*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-26 08:24:19 by asyeo             #+#    #+#             */
-/*   Updated: 2025-10-26 08:24:19 by asyeo            ###   ########.fr       */
+/*   Created: 2025/10/26 08:24:19 by asyeo             #+#    #+#             */
+/*   Updated: 2025/10/29 08:48:21 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+    DESCRIPTION: Function checks for an alphanumeric character.
+*/
 
 int    ft_isalnum(int c)
 {

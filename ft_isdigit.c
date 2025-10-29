@@ -6,11 +6,15 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 06:35:20 by dcheng            #+#    #+#             */
-/*   Updated: 2025/10/27 14:37:51 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/29 10:16:03 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+	DESCRIPTION: Function checks for a digit (0 through 9).
+*/
 
 int	ft_isdigit(int c)
 {
