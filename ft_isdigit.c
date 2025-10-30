@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 06:35:20 by dcheng            #+#    #+#             */
-/*   Updated: 2025/10/30 09:36:51 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 11:00:58 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,12 @@
 /*
 	DESCRIPTION : Function checks for a digit (0 through 9).
 	
-	RETURN VALUE :
+	RETURN VALUE : Non-zero if c is a decimal digit, otherwise 0.
 */
 
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9');
-		return (1);
-	else
-		return (0);
+	if (c >= '0' && c <= '9')
+		return (c);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:25 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 09:36:43 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 11:01:24 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@
     DESCRIPTION : Function checks if 'C' is 7-bit unsigned char that fits 
     within the ASCII character set.
     
-	RETURN VALUE :
+	RETURN VALUE : Non-zero if c is a 7-bit ASCII character, otherwise 0.
 */
 
 int    ft_isascii(int c)
 {
-    return (c >= 0 && c <= 127);
+    if (c >= 0 && c <= 127)
+        return (c);
+    return (0);
 }

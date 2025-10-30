@@ -6,28 +6,27 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:41 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 09:40:24 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 10:50:42 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-    DESCRIPTION : Function fills the first n bytes of a memory area 
-    (pointed to by s) with constant byte C.
+    DESCRIPTION : Function fills a block of memory with a particular value.
     
-	RETURN VALUE :
+	RETURN VALUE : Returns a pointer to memory area s.
 */
 
 void    *ft_memset(void *s, int c, size_t n)
 {
-    unsigned char    *p;
+    unsigned char    *ptr;
 
-    p = (unsigned char *)s;
+    ptr = (unsigned char *)s;
     i = 0;
     while (i < n)
     {
-        p[i] = (unsigned char)c;
+        ptr[i] = (unsigned char)c;
         i++;
     }
     return (s);

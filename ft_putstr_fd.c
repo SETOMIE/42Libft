@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:05 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 09:41:54 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 10:48:37 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ void    ft_putstr_fd(char *s, int fd)
     int     i;
     i = 0;
     
-    while (str[i])
+    while (*s != '\0')
     {
-        write (1, &str[i], 1);
-        i++;
+        ft_putstr_fd(*s, fd);
+        s++;
     }
 }
 

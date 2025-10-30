@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:56 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 09:42:25 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 10:19:20 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,17 @@
     DESCRIPTION : Function calculates the string's length pointed to by s, 
     excluding NULL or '\0'.
     
-	RETURN VALUE :
+	RETURN VALUE : The number of bytes in the string str.
 */
 
-size_t    ft_strlen(const char *s)
+size_t    ft_strlen(const char *str)
 {
-    size_t    len;
+    size_t    i;
 
-    len = 0;
-    while (s[len] != '\0')
-    {
-        len++;
-    }
-    return (l);
+    i = 0;
+    while (str[i] != '\0')
+        i++;
+    return (i);
 }
 
 /*int    main(void)
