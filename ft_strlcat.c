@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asyeo <asyeo@student.42kl.edu.my>          #+#  +:+       +#+        */
+/*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-26 08:24:49 by asyeo             #+#    #+#             */
-/*   Updated: 2025-10-26 08:24:49 by asyeo            ###   ########.fr       */
+/*   Created: 2025/10/26 08:24:49 by asyeo             #+#    #+#             */
+/*   Updated: 2025/10/30 09:42:17 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 
 size_t    ft_strlcat(char *dest, const char *src, size_t n)
 {

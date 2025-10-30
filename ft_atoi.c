@@ -6,15 +6,17 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 08:11:31 by dcheng            #+#    #+#             */
-/*   Updated: 2025/10/29 10:24:39 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 07:40:25 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-	DESCRIPTION: Function checks the string and converts alphabetical 
+	DESCRIPTION : Function checks the string and converts alphabetical 
 	characters into intergers.
+	
+	RETURN VALUE : Converted int.
 */
 
 int	ft_atoi(const char *nptr)

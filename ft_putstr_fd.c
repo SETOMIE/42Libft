@@ -6,14 +6,16 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:05 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/29 11:59:12 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/10/30 09:41:54 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-    DESCRIPTION: Outputs string 's' to given file descriptor.
+    DESCRIPTION : Outputs string 's' to given file descriptor.
+    
+	RETURN VALUE :
 */
 
 void    ft_putstr_fd(char *s, int fd)
