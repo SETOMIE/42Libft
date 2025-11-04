@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:25 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 11:01:24 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/04 11:20:38 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@
 	RETURN VALUE : Non-zero if c is a 7-bit ASCII character, otherwise 0.
 */
 
-int    ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
-        return (c);
-    return (0);
+	return (c >= 0 && c <= 127);
 }

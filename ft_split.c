@@ -6,13 +6,13 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:03 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/29 11:22:10 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/04 11:18:31 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char ft_split(char const *s, char c)
+char	ft_split(char const *s, char c)
 {
     
 }

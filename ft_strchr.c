@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:44 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 11:16:09 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/04 12:36:21 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 	RETURN VALUE : Returns pointer to matched character or NULL if unmatched.
 */
 
-char    strchr(const char *s, int c);
+char	ft_strchr(const char *s, int c)
 {
-    
+	
 }
