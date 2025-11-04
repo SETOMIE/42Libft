@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 08:24:52 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 10:36:42 by asyeo            ###   ########.fr       */
+/*   Created: 2025/10/29 09:20:27 by asyeo             #+#    #+#             */
+/*   Updated: 2025/10/30 09:39:41 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-	DESCRIPTION :
-	The function ft_strlcpy copies up to size - 1 characters from the given
-	string src to the given string dst, nul-terminating the result.
-
-	Note : space for the terminating \0 character must be included in dstsize.
-
+    DESCRIPTION : Given mode and successors are deleted and freed by 
+    free and 'del' function. List pointer will be NULL.
+    
 	RETURN VALUE :
-	The total length of the string that it tried to create : the length of
-	src, with the goal to facilitate truncaction detection.
 */
 
-size_t    ft_strlcpy(char *dest, const char *src, size_t n)
+void    ft_lstclear(t_list **lst, void (*del)(void*))
 {
     
 }
