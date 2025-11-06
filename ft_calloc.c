@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:10 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:56:09 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/06 13:12:07 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 
 	r = malloc(count * size);
 	if (!r)
-		return (NULL);
+		return (0);
 	ft_bzero(r, size * count);
 	return (r);
 }

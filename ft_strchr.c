@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:44 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:36:21 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/06 13:10:50 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,11 @@
 
 char	ft_strchr(const char *s, int c)
 {
-	
+	while (*s != (char)c)
+	{
+		if (!*s)
+			return (0);
+		s++;
+	}
+	return ((char *)s);
 }

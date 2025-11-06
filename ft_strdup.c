@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:46 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:58:24 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/06 07:18:31 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	len = ft_strlen(s);
 	dup = (char *)malloc((len + 1) * (1 + 1));
 	if (!dup)
-		return (NULL);
+		return (0);
 	i = 0;
 	while (i < len)
 	{

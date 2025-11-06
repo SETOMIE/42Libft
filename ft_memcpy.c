@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:36 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:06:03 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/06 11:11:33 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,23 @@
 	
 	VISUALS: Pouring water from Cup A into empty Cup C.
 	
-	RETURN VALUE: poop
+	RETURN VALUE: DEST VALUE.
 */
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char			*d;
-	const unsigned char		*s;
+	size_t	i; //i can only be positive or 0.
 
-	if (!dest && !src)
+	i = 0;
+	if (!dest && !src) //if dest & src = NULL
 		return (0);
-	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
-	while (n--)
-		*d++ = *s++;
+	if (n == 0 || (dest != src))
+	{
+		while (i < n)
+		{
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i]; //?
+			i++;
+		}
+	}
 	return (dest);
 }
