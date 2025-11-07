@@ -6,9 +6,16 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:12 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/30 09:39:15 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/07 17:33:54 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+    DESCRIPTION : Mallocate and return an 'n' representing string. 
+	Negative numbers must  be handled. 
+    
+	RETURN VALUE : String representing n; NULL if malloc fails.
+*/
 
 #include "libft.h"
 

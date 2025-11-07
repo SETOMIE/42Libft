@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:56 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:35:52 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/07 16:27:36 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ size_t	ft_strlen(const char *str)
 
 /*int    main(void)
 {
-	char    str[] = "Jeff the Landshark!";
+	char    str[] = "Jeff the Lands/0hark!";
 	printf("Length of '%s' is: %zu\n", str, ft_strlen(str));
 	return (0);
 }*/

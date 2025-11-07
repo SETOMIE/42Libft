@@ -6,9 +6,17 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:43 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/29 11:24:02 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/07 17:35:35 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+    DESCRIPTION : Applies function to characters of str to create a new string 
+	(with malloc), resulting in succesive function application.
+    
+	RETURN VALUE : A new string resulting of the successive applications of 
+	'f'; NULL if the memory allocations failed.
+*/
 
 #include "libft.h"
 

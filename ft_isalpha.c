@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 06:17:43 by dcheng            #+#    #+#             */
-/*   Updated: 2025/11/04 11:20:15 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/07 16:09:02 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@
 	DESCRIPTION :  Function checks for an alpahabetical characters, both upper 
 	and lowercase.
 	
-	RETURN VALUE :
+	RETURN VALUE : The alphabetical ASCII value.
 */
 
 int	ft_isalpha(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	return (0);
 }
