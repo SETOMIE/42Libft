@@ -6,14 +6,14 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 11:25:02 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/07 17:25:26 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/11 10:10:17 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-    DESCRIPTION : 
+    DESCRIPTION : Writes the character c on file descriptor.
     
-	RETURN VALUE : 
+	RETURN VALUE : None.
 */
 
 #include "libft.h"

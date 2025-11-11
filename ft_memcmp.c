@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:16:20 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/06 13:33:21 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/11 11:30:26 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	if (n == 0)
 		return (0);
-
 	str1 = (const char *)s1;
 	str2 = (const char *)s2;
 	i = 0;
