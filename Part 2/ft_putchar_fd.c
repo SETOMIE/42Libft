@@ -16,21 +16,19 @@
 	RETURN VALUE : None.
 */
 
-#include "libft.h"
-
-/*
-	DESCRIPTION : Outputs character 'c' to given file descriptor.
-	
-	RETURN VALUE :
-*/
+#include "libft.h" 
 
 void	ft_putchar_fd(char c, int fd)
 {
+
 	write (fd, &c, 1);
 	return (0);
 }
 
-/*
-1st para is file descriptor.
-2nd para is address of the char.
+/* NOTES:
+1) 1st para is the file descriptor (int fd) which specifies the fd to write on.
+
+2) 2nd para is the char to be written. (char c)
+
+3) write() is a sys call that writes data to a file descriptor.
 */

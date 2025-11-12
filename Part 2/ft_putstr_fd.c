@@ -18,12 +18,6 @@
 
 #include "libft.h"
 
-/*
-	DESCRIPTION : Outputs string 's' to given file descriptor.
-	
-	RETURN VALUE :
-*/
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

@@ -42,7 +42,14 @@ char	ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-/*
-unsigned int start will always be equal/more than 0.
-ft_calloc initializes string values to 0. malloc does not initialize.
+/* NOTES:
+1) unsigned int start will always be equal/more than 0.
+
+2) ft_calloc initializes string values to 0 (including NULL). 
+	malloc does not initialize but is used more often.
+
+3) sizeof(char) is an operator that prints/returns the size of a data type.
+	each data type has a different number of bytes. (char; 1, int; 2/4, float; 4, double; 8)
+
+4) if a string is empty/NULL, a substring cannot be created, hence return (0);.
 */

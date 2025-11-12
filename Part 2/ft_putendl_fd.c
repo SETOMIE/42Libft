@@ -18,12 +18,6 @@
 
 #include "libft.h"
 
-/*
-    DESCRIPTION : Outputs string 's' to given file descriptor, followed by \n.
-    
-	RETURN VALUE :
-*/
-
 void    ft_putendl_fd(char *s, int fd)
 {
     

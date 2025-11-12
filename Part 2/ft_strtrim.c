@@ -36,7 +36,7 @@ static int	isset(char c, char const *set)
 /*
 static variables: retains value after multiple funct calls. initialized once,
 remains undestroyed when value returns. lifetime of variable extends until 
-end of program. mrrowww :3
+end of program.
 */
 
 char	ft_strtrim(char const *s1, char const *set)

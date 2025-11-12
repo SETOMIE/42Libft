@@ -18,12 +18,6 @@
 
 #include "libft.h"
 
-/*
-    DESCRIPTION : Outputs interger 'n' to given file descriptor.
-    
-	RETURN VALUE :
-*/
-
 void    ft_putnbr_fd(int in, int fd)
 {
     
