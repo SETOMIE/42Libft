@@ -29,5 +29,27 @@
 
 char    ft_itoa(int n)
 {
-    
+    char    *str;
+    long    num;
+    size_t  len;
+
+    num = n;
+    len = num_len(num);
+    if (n < 0)
+    {
+        num = -num;
+        len++;
+    }
+    str = ft_calloc(len + 1, sizeof(char));
+    if (!str)
+        return (0);
+    str[len] = '\0';
+    while (len--)
+    {
+        str[len] = (num % 10) + '0';
+        num /= 10;
+    }
+    if (n < 0)
+        str[0] = '-';
+    return (str);
 }

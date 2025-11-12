@@ -1,4 +1,6 @@
-/* ************************************************************************** */
+p[]kklllllll;lo;l,kl;',;'
+
+]\\]\/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
@@ -18,7 +20,25 @@
 
 #include "libft.h"
 
-void    ft_putnbr_fd(int in, int fd)
+void    ft_putnbr_fd(int n, int fd)
 {
-    
+    long    n;
+
+    if (n < 0)
+    {
+        ft_putchar_fd('-', fd);
+        n = -n;
+    }
+    if (n >= 10)
+    {
+        ft_putnbr_fd(n / 10, fd);
+        ft_putnbr_fd(n % 10, fd);
+    }
+    else
+        ft_putchar_fd(n + '0', fd);
 }
+
+/*NOTES:
+1) long variables are used for larger range of values.
+
+*/

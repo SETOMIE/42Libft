@@ -20,17 +20,17 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (*s != '\0')
-	{
-		ft_putstr_fd(*s, fd);
-		s++;
-	}
+	if (!s)
+        return (0);
+	write(fd, &s, ft_strlen(s));
 }
 
+/* NOTES:
+1) (!s) is the shortened form of (s == NULL) or (s = '\0').
+
+2) if your code only needs one line, you can exclude the second {} and return (0).
 /*
+
 int     main(void)
 {
 	char *str = "Jeffy Jefferson"

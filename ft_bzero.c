@@ -19,21 +19,39 @@
 	RETURN VALUE : None.
 */
 
-// void	ft_bzero(void *s, size_t n)
-// {
-// 	size_t			i;
-// 	unsigned char	*ptr;
+/*
+void	ft_bzero(void *s, size_t n)
+{
+	size_t			i;
+	unsigned char	*ptr;
 
-// 	ptr = (unsigned char *)s;
-// 	i = 0;
-// 	while (i < n)
-// 	{
-// 		ptr[i] = 0;
-// 		i++;
-// 	}
-// }
+	ptr = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		ptr[i] = 0;
+		i++;
+	}
+}
+*/
 
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+
+/*
+void	ft_bzero(void *s, size_t n)
+{
+	size_t	i;
+	char	*str;
+
+	str = s;
+	i = 0;
+	while (i < n)
+	{
+		str[i] = 0;
+		i++;
+	}
+}
+*/

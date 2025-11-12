@@ -21,5 +21,18 @@
 
 void    ft_lstclear(t_list **lst, void (*del)(void*))
 {
-    
+    t_list  *temp;
+    t_list  *next_node;
+
+    if (!lst || !del)
+        return ;
+    temp = *lst;
+    while (temp != NULL)
+    {
+        next_node = temp->next;
+        del(temp->content);
+        free(temp);
+        temp = next_node;
+    }
+    *lst = NULL;
 }

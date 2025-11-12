@@ -21,5 +21,27 @@
 
 char	ft_split(char const *s, char c)
 {
-    
+	char	**str;
+	size_t	i;
+	size_t	j;
+	size_t	start;
+
+	if (!s)
+		return (0);
+	str = ft_calloc((count_words(s, c) + 1), sizeof(char *));
+	if (!str)
+		return (0);
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		while (s[i] && s[i] == c)
+			i++;
+		start = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (i > start)
+			str[j++] = ft_substr(s, start, i - start);
+	}
+	return (str);
 }

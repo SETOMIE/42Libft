@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 /*
-    DESCRIPTION : Writes a string on specified file descriptor, followed by \n.
+    DESCRIPTION : Writes a str on specified file descriptor, followed by \n.
     
 	RETURN VALUE : None.
 */
@@ -20,5 +20,22 @@
 
 void    ft_putendl_fd(char *s, int fd)
 {
-    
+    if (!s)
+        return (0);
+    while (*s = '\0')
+    {
+        write(fd, &s, ft_putstr_fd);
+        s++
+    }
+    write(fd, "\n", 1);
 }
+
+/*
+void    ft_putendl_fd(char *s, int fd)
+{
+    if (!s)
+        return ;
+    ft_putstr_fd(s, fd);
+    ft_putchar_fd('\n', fd);
+}
+    */

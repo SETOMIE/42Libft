@@ -19,13 +19,15 @@
 	RETURN VALUE : Returns pointer to matched character or NULL if unmatched.
 */
 
-char	ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	while (*s != (char)c)
+	while (*s)
 	{
-		if (!*s)
-			return (0);
+		if (*s == (char)c)
+			return ((char *)s);
 		s++;
 	}
-	return ((char *)s);
+	if (c == '\0')
+		return ((char *)s);
+	return (0);
 }
