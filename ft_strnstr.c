@@ -6,21 +6,20 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:03:11 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 07:19:00 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 13:49:51 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-	DESCRIPTION : The function ft_strnstr locates the first occurrence of 
-	the null-terminated string 'needle' in the string 'haystack', where not 
-	more than 'len' characters are searched. Characters that appear after a 
-	'\0' character are not searched.
+	DESCRIPTION : Locates the first occurance of a null-terminated 
+	substring (needle) in a string (haystack). Chars that appear after 
+	NULL are not searched.
 
-	RETURN VALUE : A pointer to the first occurrence of 'needle' in 'haystack';
-	NULL if 'needle' is not found. If 'needle' is an empty string, 
-	'haystack' is returned.
+	RETURN VALUE : Haystack is returned if needle is empty. If needle occurs
+	nowhere in haystack, NULL is returned; otherwise pointer to the first char
+	of the first occurance of needle is returned.
 */
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)

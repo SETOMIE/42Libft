@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 08:11:31 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 07:18:08 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 13:52:45 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /*
 	DESCRIPTION : Function checks the string and converts alphabetical 
-	characters into intergers.
+	characters into int representation.
 	
-	RETURN VALUE : Converted interger.
+	RETURN VALUE : Converted intial portion of string into interger.
 */
 
 int	ft_atoi(const char *nptr)

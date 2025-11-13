@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:39 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 08:02:40 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 14:20:15 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,26 +21,24 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t			i;
-	char			j;
-	unsigned char	*d;
-	unsigned char	*s;
+	char		*dptr;
+	const char	*sptr;
+	ahjsjdbhad 	len;
 
-	i = 0;
-	j = 1;
 	if (!dest && !src)
 		return (0);
-	if (dest > src)
+	dptr = (char *)dest;
+	sptr = (const char *)src;
+	if (sptr < dptr && sptr + len > dptr)
+		while (len--)
+			*(dptr + len) = *(sptr + len);
+	else
 	{
-		j = -1;
-		d += n - 1;
-		s += n - 1;
+		while (len--)
+		{
+			*dptr = *sptr;
+			sptr++;
+			dptr++;
+		}
 	}
-	while (i < n)
-	{
-		*d = *s;
-		d[i++];
-		s[i++];
-	}
-	return (dest);
 }
