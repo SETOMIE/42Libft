@@ -6,17 +6,17 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:20:35 by asyeo             #+#    #+#             */
-/*   Updated: 2025/10/29 11:30:21 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 07:26:06 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list      ft_lstlast(t_list *lst)
+t_list	ft_lstlast(t_list *lst)
 {
-    if (lst == NULL)
-        return (NULL);
-    while (lst->next != NULL)
-        lst = lst->next;
-    return (lst);
+	if (lst == '\0')
+		return (NULL);
+	while (lst->next != '\0')
+		lst = lst->next;
+	return (*lst);
 }

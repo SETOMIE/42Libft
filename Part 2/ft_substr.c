@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:08 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 11:18:26 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 07:21:48 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,8 @@ char	ft_substr(char const *s, unsigned int start, size_t len)
 	malloc does not initialize but is used more often.
 
 3) sizeof(char) is an operator that prints/returns the size of a data type.
-	each data type has a different number of bytes. (char; 1, int; 2/4, float; 4, double; 8)
+	each data type has a different number of bytes. 
+	(char; 1, int; 2/4, float; 4, double; 8)
 
 4) if a string is empty/NULL, a substring cannot be created, hence return (0);.
 */

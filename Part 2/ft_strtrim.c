@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:54 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 12:35:58 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 07:21:57 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ char	ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	
-	if (!s)
+
+	if (!s1)
 		return (0);
 	if (!set)
 		return (ft_strdup(s1));

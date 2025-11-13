@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:19 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/07 16:09:25 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 08:11:53 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,12 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+/* NOTES:
+1) Can be alternatively written as return (ft_islapha(c) || ft_isdigit(c));
+
+2) Alphanumericals cover both alphabetical and numerical ASCII values.
+
+3) '||' is OR operator, and looks for true. If first arg is false, it tests the 
+second. If both args are false, then false; otherwise true.
+*/

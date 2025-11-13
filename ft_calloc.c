@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:10 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/07 15:55:17 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 08:43:55 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,19 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*i;
+	unsigned char	*tmp;
+	size_t			i;
 
-	i = malloc(count * size);
-	if (!i)
+	i = 0;
+	tmp = malloc(count * size);
+	if (tmp == '\0')
 		return (0);
-	ft_bzero(i, size * count);
-	return (i);
+	while (i < count * size)
+		tmp[i++] = 0;
+	return (tmp);
 }
+
+/*NOTES:
+
+1) * in (count * size) is used to multiply count and size's values.
+*/

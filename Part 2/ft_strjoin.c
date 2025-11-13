@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:42 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 11:51:16 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 07:21:11 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ char	ft_strjoin(char const *s1, char const *s2)
 	return (res);
 }
 
+char	ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	i;

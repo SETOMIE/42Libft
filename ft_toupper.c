@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:25:06 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/06 12:51:40 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 08:27:58 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,13 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+/*
+int	main(void)
+{
+	char c = 'a';
+
+	printf("Before: %c, After: %c", original, ft_toupper(c))
+		return (0);
+}
+*/

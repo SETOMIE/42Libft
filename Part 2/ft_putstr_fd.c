@@ -6,13 +6,13 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:05 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 10:11:05 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 07:20:41 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-    DESCRIPTION : Writes string on specified file descriptor.
-    
+	DESCRIPTION : Writes string on specified file descriptor.
+	
 	RETURN VALUE : None.
 */
 
@@ -21,14 +21,15 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
-        return (0);
+		return (0);
 	write(fd, &s, ft_strlen(s));
 }
 
 /* NOTES:
 1) (!s) is the shortened form of (s == NULL) or (s = '\0').
 
-2) if your code only needs one line, you can exclude the second {} and return (0).
+2) if your code only needs one line, 
+you can exclude the second {} and return (0).
 /*
 
 int     main(void)

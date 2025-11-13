@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:49 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 11:32:28 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 09:50:12 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 	dst. It will append at most dstsize - ft_strlen(dst) - 1 and 
 	nul-terminate the result.
 
-	Note : space for the terminating \0 character must be included in dstsize.
+	Note : space for the terminating '\0' character must be included in dstsize.
 
 	RETURN VALUE :
 	The total length of the string that it tried to create : the initial
@@ -40,3 +40,16 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	j = ft_strlcpy(dest, src, size - 1);
 	return (j + i);
 }
+
+/*
+int	main(void)
+{
+	const char *s = "Jeff the Shark"; //14
+	const char *d = "Gotham kinda stinks"; //19
+	
+	printf("%s\n", d);
+	ft_strlcat(d, s, 33)
+	printf("%s\n", d);
+	return (0);
+}
+*/

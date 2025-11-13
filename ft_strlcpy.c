@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:52 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 11:32:32 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 08:49:01 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,15 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
+
+/*
+int	main(void)
+{
+	const char *s = "Jeff the Shark"; //14
+	const char *d = "              ";
+	
+	printf("%s\n", d);
+	printf("%s\n", d, s, 14);
+	return (0);
+}
+*/

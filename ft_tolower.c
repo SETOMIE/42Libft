@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:25:03 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/06 12:51:43 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 08:22:07 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,13 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+
+/*
+int	main(void)
+{
+	char c = 'A';
+
+	printf("Before: %c, After: %c", original, ft_tolower(c))
+		return (0);
+}
+*/
