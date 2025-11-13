@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:39 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 14:20:15 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 14:38:54 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 	RETURN VALUE : ORIGINAL DEST VALUE.
 */
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	char		*dptr;
 	const char	*sptr;
-	ahjsjdbhad 	len;
+	size_t		len;
 
 	if (!dest && !src)
 		return (0);
@@ -41,4 +41,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			dptr++;
 		}
 	}
+	return (dest);
 }
