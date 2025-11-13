@@ -6,16 +6,18 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:58 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:22:50 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 11:46:32 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-	DESCRIPTION : Function converts lowercase characters to uppercase.
+	DESCRIPTION : Compares a specific number of chars from the 
+	null-terminated strings.
 
-	RETURN VALUE : Uppercase equivalent characters.
+	RETURN VALUE : Returns an int that indiciates the relationship 
+	between the two strings.
 */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -34,11 +36,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 /*int     main(void)
 {
-	char    str1[] =
-	char    str2[] =
-	char    str3[] =
+	char    *s1 = "Lactose intolerance"; //19
+	char    *s2 = "Lactose intolerance"; //19
 
-	printf("%d\n", ft_strncmp(str1, str2, 2));
-	printf("%d", ft_strncmp(str2, str3, 2));
+	printf("%d\n", ft_strncmp(s1, s2, 8));
+	printf("%d", ft_strncmp(s1, s2, 19));
 	return (0);
 }*/

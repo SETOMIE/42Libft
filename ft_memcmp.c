@@ -6,14 +6,14 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:16:20 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 11:30:26 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 11:45:26 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 	DESCRIPTION :
-	The function ft_memcmp compares the first n bytes of the memory areas
-	s1 and s2. The bytes are interpreted as unsigned char.
+	Compares the first n bytes of the memory areas s1 and s2. The bytes 
+	are interpreted as unsigned char. 
 
 	RETURN VALUE :
 	An integer less than, equal to, or greater than zero if the first
@@ -38,3 +38,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return (str1 - str2);
 }
+
+/*NOTES:
+1) Works similarly to ft_strncmp.
+
+2) Return Value depends entirely on difference found. No difference = 0.
+
+3) If 1st chr in s2 is greater, res is negative. If 1st chr in s2 is 
+lesser, res is positive.
+*/

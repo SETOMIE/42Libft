@@ -6,15 +6,14 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:16:25 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 11:30:01 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/13 11:42:43 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 	DESCRIPTION :
-	The function ft_memchr searches n bytes of the memory area pointed to
-	by s for the first occurence of c. Both c and the bytes of s are
-	interpreted as unsigned char.
+	Function locates the FIRST occurance of chr in string s. 
+	(converted to an unsigned char)
 
 	RETURN VALUE:
 	A pointer to the matching byte. NULL if the character does not occur
