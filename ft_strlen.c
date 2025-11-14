@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:56 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/07 16:27:36 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:32:14 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Function calculates the string's length pointed to by s, 
@@ -18,6 +16,9 @@
 	
 	RETURN VALUE : The number of bytes in the string str.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 size_t	ft_strlen(const char *str)
 {

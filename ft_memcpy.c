@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:36 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 14:44:51 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:31:03 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION: Function copies n bytes from src (source) to dest (destination).
@@ -19,6 +17,9 @@
 	
 	RETURN VALUE: DEST VALUE.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

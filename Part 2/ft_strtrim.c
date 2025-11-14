@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:54 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 07:21:57 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:06 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 */
 
 #include "libft.h"
+//#include <stdio.h>
 
 static int	isset(char c, char const *set)
 {
@@ -50,6 +51,13 @@ char	ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /*
 static variables: retains value after multiple funct calls. initialized once,

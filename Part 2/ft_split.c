@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:03 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/07 17:32:43 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:23 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	ft_split(char const *s, char c)
 {
@@ -45,3 +46,10 @@ char	ft_split(char const *s, char c)
 	}
 	return (str);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/

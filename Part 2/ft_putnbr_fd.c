@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:30 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 07:20:00 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:33 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -35,6 +36,13 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /*NOTES:
 1) long variables are used for larger range of values.

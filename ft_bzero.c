@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:06 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 14:44:14 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:25:36 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Function erases the data in the n bytes of the location 
@@ -18,6 +16,9 @@
 	
 	RETURN VALUE : None.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:43 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 10:09:25 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:09 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -38,3 +39,10 @@ char	ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (str);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/

@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:58 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 11:46:32 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:32:21 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Compares a specific number of chars from the 
@@ -19,6 +17,9 @@
 	RETURN VALUE : Returns an int that indiciates the relationship 
 	between the two strings.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

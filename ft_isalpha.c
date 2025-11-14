@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 06:17:43 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 14:44:29 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:26:00 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION :  Function checks for an alpahabetical characters, both upper 
@@ -18,6 +16,9 @@
 	
 	RETURN VALUE : The alphabetical ASCII value.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_isalpha(int c)
 {

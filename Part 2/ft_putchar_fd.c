@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 11:25:02 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 12:41:28 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:39 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,21 @@
 	RETURN VALUE : None.
 */
 
-#include "libft.h" 
+#include "libft.h"
+//#include <stdio.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 	return (0);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /* NOTES:
 1) 1st para is the file descriptor (int fd) which specifies the fd to write on.

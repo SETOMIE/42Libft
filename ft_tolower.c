@@ -6,17 +6,18 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:25:03 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 08:22:07 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:32:42 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Function converts uppercase characters to lowercase.
 
 	RETURN VALUE : Lowercase equivalent characters.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_tolower(int c)
 {

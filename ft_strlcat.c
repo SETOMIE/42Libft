@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:49 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 10:56:32 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:46:09 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION :
@@ -22,6 +20,9 @@
 	length of dst + the length of src, with the goal to facilitate
 	truncaction detection.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -36,7 +37,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		return (dstlen + srclen);
 	while (src[i] != '\0' && (dstlen + 1) < size)
 	{
-		dest[dstlen] = src[i]
+		dest[dstlen] = src[i];
 		dstlen++;
 		i++;
 	}
@@ -44,7 +45,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (dstlen + srclen);
 }
 
-/*
+/* 
 int	main(void)
 {
 	const char *s = "Jeff the Shark"; //14

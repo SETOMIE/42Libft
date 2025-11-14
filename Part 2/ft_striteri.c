@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:38 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/11 10:09:37 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:18 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -32,3 +33,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/

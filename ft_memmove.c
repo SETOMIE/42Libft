@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:39 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 14:44:54 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:31:13 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Function copies n bytes from src to a temporary array 
@@ -18,6 +16,10 @@
 	
 	RETURN VALUE : ORIGINAL DEST VALUE.
 */
+
+
+#include "libft.h"
+//#include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {

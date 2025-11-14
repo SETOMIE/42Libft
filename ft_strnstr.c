@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:03:11 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 13:49:51 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:32:29 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Locates the first occurance of a null-terminated 
@@ -21,6 +19,9 @@
 	nowhere in haystack, NULL is returned; otherwise pointer to the first char
 	of the first occurance of needle is returned.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -43,3 +44,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/

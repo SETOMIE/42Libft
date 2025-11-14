@@ -6,11 +6,9 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 08:11:31 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 14:44:06 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:25:28 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 	DESCRIPTION : Function checks the string and converts alphabetical 
@@ -18,6 +16,9 @@
 	
 	RETURN VALUE : Converted intial portion of string into interger.
 */
+
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {

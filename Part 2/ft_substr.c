@@ -6,17 +6,18 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:08 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 07:21:48 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:24:05 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+//#include <stdio.h>
 
 /*
 	DESCRIPTION : Allocates with malloc and returns a substring from string 's'.
 	
 	RETURN VALUE : Returns the new string; NULL if malloc fails.
 */
-
-#include "libft.h"
 
 char	ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -41,6 +42,13 @@ char	ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (str);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /* NOTES:
 1) unsigned int start will always be equal/more than 0.
