@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:52 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:32:06 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 16:21:12 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-
 	if (dstsize != 0)
 	{
 		while (src[i] != '\0' && i < (dstsize - 1))

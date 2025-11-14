@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:06 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:25:36 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:59:28 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	ptr;
-
-	ptr = (char *) s;
-	while (n != 0)
-	{
-		ptr = 0;
-		s++;
-	}
-	//return (0);
+	ft_memset(s, 0, n);
 }
 
 /*

@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:39 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:31:13 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 16:21:02 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,32 +17,29 @@
 	RETURN VALUE : ORIGINAL DEST VALUE.
 */
 
-
 #include "libft.h"
 //#include <stdio.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char		*t_dst;
-	const char	*t_src;
-	size_t		len;
+	char		*d;
+	const char	*s;
 
-	len = 0;
 	if (!dest && !src)
-		return (0);
-	t_dst = (char *)dest;
-	t_src = (const char *)src;
-	if (t_src < t_dst && t_src + len > t_dst)
-		while (len--)
-			*(t_dst + len) = *(t_src + len);
+		return (NULL);
+	d = dest;
+	s = src;
+	if (d < s)
+	{
+		while (n--)
+			*d++ = *s++;
+	}
 	else
 	{
-		while (len--)
-		{
-			*t_dst = *t_src;
-			t_dst++;
-			t_src++;
-		}
+		d += n;
+		s += n;
+		while (n--)
+			*(--d) = *(--s);
 	}
 	return (dest);
 }

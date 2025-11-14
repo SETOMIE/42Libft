@@ -6,7 +6,7 @@
 #    By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 01:09:42 by asyeo             #+#    #+#              #
-#    Updated: 2025/11/04 12:39:26 by asyeo            ###   ########.fr        #
+#    Updated: 2025/11/14 16:27:55 by asyeo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,4 +41,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re all
+.PHONY: clean fclean re all bonus

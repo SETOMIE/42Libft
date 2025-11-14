@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:17 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:21:40 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 16:05:16 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,15 @@
 */
 
 #include "libft.h"
-//#include <stdio.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
 		return (0);
-	while (*s = '\0')
+	while (*s)
 	{
 		write(fd, &s, ft_putstr_fd);
-		s++
+		s++;
 	}
 	write(fd, "\n", 1);
 }

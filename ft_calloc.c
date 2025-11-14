@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:10 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:25:48 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 16:16:32 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_calloc(size_t count, size_t size)
 
 	i = 0;
 	tmp = malloc(count * size);
-	if (tmp == '\0')
+	if (!tmp)
 		return (0);
 	while (i < count * size)
 		tmp[i++] = 0;
