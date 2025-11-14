@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:52 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 08:49:01 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 09:38:02 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,15 @@
 	src, with the goal to facilitate truncaction detection.
 */
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t sdstize)
 {
 	size_t	i;
 
 	i = 0;
-	if (size != 0)
+
+	if (dstsize != 0)
 	{
-		while (i < (size - 1) && src[i] != '\0')
+		while (src[i] != '\0' && i < (dstsize - 1))
 		{
 			dest[i] = src[i];
 			i++;

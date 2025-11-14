@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:25:01 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 11:34:12 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 11:44:59 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -33,3 +34,12 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
+
+/*int	main(void)
+{
+	char	*s = "Hello";
+	char	*r = ft_strrchr(s,'l');
+	
+	printf("%c\n", *r);
+	return (0);
+}*/

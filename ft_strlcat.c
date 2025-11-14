@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:49 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 09:50:12 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 10:56:32 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 /*
 	DESCRIPTION :
-	The function ft_strlcat appends the given string src to the end of 
-	dst. It will append at most dstsize - ft_strlen(dst) - 1 and 
-	nul-terminate the result.
-
+	Function will 'chain together' two strings.
 	Note : space for the terminating '\0' character must be included in dstsize.
 
 	RETURN VALUE :
@@ -29,16 +26,22 @@
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	j;
+	size_t	dstlen;
+	size_t	srclen;
 
 	i = 0;
-	while (*dest && (i < size))
+	dstlen = ft_strlen(dest);
+	srclen = ft_strlen(src);
+	if (size == dstlen)
+		return (dstlen + srclen);
+	while (src[i] != '\0' && (dstlen + 1) < size)
 	{
-		dest++;
+		dest[dstlen] = src[i]
+		dstlen++;
 		i++;
 	}
-	j = ft_strlcpy(dest, src, size - 1);
-	return (j + i);
+	dest[dstlen] = 0;
+	return (dstlen + srclen);
 }
 
 /*
