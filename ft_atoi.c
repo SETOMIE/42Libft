@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 08:11:31 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 13:52:45 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 14:44:06 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,14 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(result * sign));
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
+
+/*NOTES:
+
+*/

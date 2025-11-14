@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:39 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 09:35:05 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 14:44:54 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,13 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /*NOTES:
 1) t_dst is temporary destination. t_src is temporary source.

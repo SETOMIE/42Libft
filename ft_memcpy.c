@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:36 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 09:34:53 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 14:44:51 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /*NOTES:
 1) t_dst is temporary destination. t_src is temporary source.

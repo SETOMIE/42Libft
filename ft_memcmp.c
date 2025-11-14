@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:16:20 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 14:42:46 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 14:44:44 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return (str1 - str2);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /*NOTES:
 1) Works similarly to ft_strncmp.

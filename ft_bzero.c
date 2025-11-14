@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:06 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 09:27:23 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 14:44:14 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,13 @@ void	ft_bzero(void *s, size_t n)
 	}
 	//return (0);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
 
 /*NOTES:
 1) Alternatively can be written as ft_memset(s, 0, n);

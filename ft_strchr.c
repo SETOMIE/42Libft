@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:44 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/13 11:34:20 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/14 14:45:01 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,10 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
+
+/*
+int	main(void)
+{
+	
+}
+*/
