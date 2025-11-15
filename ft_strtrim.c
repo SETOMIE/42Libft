@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:54 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:24:06 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 13:01:37 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int	isset(char c, char const *set)
 	return (0);
 }
 
-char	ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
@@ -45,9 +45,9 @@ char	ft_strtrim(char const *s1, char const *set)
 		return (ft_strdup(s1));
 	start = 0;
 	end = ft_strlen(s1);
-	while (is_set(s1[start]) && s1[start] != '\0')
+	while (isset(s1[start], set) && s1[start] != '\0')
 		start++;
-	while (is_set(s1[end - 1]) && end > start)
+	while (isset(s1[end - 1], set) && end > start)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }

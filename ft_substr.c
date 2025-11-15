@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:08 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:24:05 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 12:23:22 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,12 @@
 	RETURN VALUE : Returns the new string; NULL if malloc fails.
 */
 
-char	ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	i;
+	size_t		i;
 	char	*str;
-	size_t	len;
 
-	if (s != '\0')
+	if (s == NULL)
 		return (0);
 	if (ft_strlen(s) < start)
 		len = 0;

@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:49 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:46:09 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 11:59:24 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		dstlen++;
 		i++;
 	}
-	dest[dstlen] = 0;
+	dest[dstlen] = '\0';
 	return (dstlen + srclen);
 }
 

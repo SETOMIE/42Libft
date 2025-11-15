@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:42 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:24:15 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 12:38:31 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,33 +20,13 @@
 #include "libft.h"
 //#include <stdio.h>
 
-char	ft_strjoin(char const *s1, char const *s2)
-{
-	char	*res;
-	char	i;
-	char	j;
-
-	i = 0;
-	j = 0;
-	res = malloc((ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (!res)
-		return (0);
-	while (s1[i])
-		res[j++] = s1[i++];
-	i = 0;
-	while (s2[i])
-		res[j++] = s2[i++];
-	res[j] = 0;
-	return (res);
-}
-
-char	ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	i;
 	size_t	j;
 
-	if (s1 && s2 == '\0')
+	if (s1 && s2 == NULL)
 		return (0);
 	str = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
 	if (!str)

@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 07:44:59 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/04 12:39:35 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 12:49:06 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef struct s_list
 
 char	*ft_itoa(int n);
 
-/* Check & Manipulate Characters Functions */
+/* Part 1 Functions */
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -36,9 +36,6 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-
-/* to Funtions */
-
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s);
 int		ft_atoi(const char *nptr);

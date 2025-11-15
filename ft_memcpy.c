@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:36 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 10:10:13 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 11:33:41 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char			*t_dst;
 	const unsigned char		*t_src;
 
-	if (dest == NULL && src == NULL)
+	if (!dest && !src)
 		return (NULL);
 	t_dst = (unsigned char *) dest;
 	t_src = (const unsigned char *) src;
