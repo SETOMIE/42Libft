@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 06:17:43 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:26:00 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 10:30:25 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
+		return (c);
 	return (0);
 }
 
@@ -32,4 +32,9 @@ int	main(void)
 {
 	
 }
+*/
+
+/*NOTES:
+1) return (1)/return (c) is true, return (0) is false. 
+As long as the return (?) is above 0, it is true.
 */
