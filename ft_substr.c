@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:06:08 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 12:23:22 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/15 15:23:05 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t		i;
-	char	*str;
+	char const	*str;
 
 	if (s == NULL)
 		return (0);
