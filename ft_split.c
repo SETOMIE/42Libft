@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:03 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 13:04:12 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/17 10:53:07 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,9 @@ char	**ft_split(char const *s, char c)
 	}
 	return (str);
 }
+
+char	**ft_split(char cons *s, char c)
+
 
 /*
 int	main(void)
