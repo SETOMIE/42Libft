@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 07:44:59 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/18 10:42:00 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 14:59:14 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,7 @@
 # include <unistd.h>
 # include <ctype.h>
 
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}					t_list;
-
 char	*ft_itoa(int n);
-
-/* Part 1 Functions */
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);

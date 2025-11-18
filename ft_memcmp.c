@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 13:16:20 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 15:19:58 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 14:40:33 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,26 +26,31 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const char	*str1;
-	const char	*str2;
-	size_t		i;
+	const unsigned char	*str1;
+	const unsigned char	*str2;
+	size_t				i;
 
 	if (n == 0)
 		return (0);
-	str1 = (const char *)s1;
-	str2 = (const char *)s2;
+	str1 = s1;
+	str2 = s2;
 	i = 0;
 	while ((i < n - 1) && (str1[i] == str2[i]))
 		i++;
-	return (str1 - str2);
+	return (str1[i] - str2[i]);
 }
 
-/*
-int	main(void)
-{
-	
-}
-*/
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char s1[] = "hello";
+// 	char s2[] = "hellO";
+// 	char	result;
+
+// 	result = ft_memcmp(s1, s2, 5);
+// 	printf("%d\n", result);
+// }
 
 /*NOTES:
 1) Works similarly to ft_strncmp.

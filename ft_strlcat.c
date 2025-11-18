@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 08:24:49 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 11:59:24 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 14:52:38 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,34 +26,32 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	i;
 	size_t	dstlen;
 	size_t	srclen;
+	size_t	i;
 
-	i = 0;
 	dstlen = ft_strlen(dest);
 	srclen = ft_strlen(src);
-	if (size == dstlen)
-		return (dstlen + srclen);
-	while (src[i] != '\0' && (dstlen + 1) < size)
+	i = 0;
+	if (size <= dstlen)
+		return (size + srclen);
+	while (src[i] && (dstlen + i) < (size - 1))
 	{
-		dest[dstlen] = src[i];
-		dstlen++;
+		dest[dstlen + i] = src[i];
 		i++;
 	}
-	dest[dstlen] = '\0';
+	dest[dstlen + i] = '\0';
 	return (dstlen + srclen);
 }
 
-/* 
-int	main(void)
-{
-	const char *s = "Jeff the Shark"; //14
-	const char *d = "Gotham kinda stinks"; //19
-	
-	printf("%s\n", d);
-	ft_strlcat(d, s, 33)
-	printf("%s\n", d);
-	return (0);
-}
-*/
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char s[3210] = " Jeff the Shark"; //14
+// 	char d[] = "Gotham kinda stinks"; //19
+
+// 	printf("%s\n", d);
+// 	ft_strlcat(d, s, 35);
+// 	printf("%s\n", d);
+// 	return (0);
+// }
