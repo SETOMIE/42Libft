@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:05 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 15:23:28 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 14:16:35 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,17 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		write(fd, &s, ft_strlen(s));
-		i++;
-	}
+	if (!s)
+		return (NULL);
+	ft_putchar(fd, s, ft_strlen(s));
 }
 
-/*int	main(void)
-{
-	char	*str = "Jeffy Jefferson";
-	ft_putstr_fd(str, 1);
-	return (0);
-}*/
+// int	main(void)
+// {
+// 	char	*str = "Jeffy Jefferson";
+// 	ft_putstr_fd(str, 1);
+// 	return (0);
+// }
 
 /*
 NOTES:

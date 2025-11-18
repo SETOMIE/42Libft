@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:08:17 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 15:13:56 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 14:13:16 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	ft_putendl_fd(char *s, int fd)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		write(fd, &s, ft_strlen(s));
-		s++;
+		write(fd, &s, 1);
+		i++;
 	}
 	write(fd, "\n", 1);
 }

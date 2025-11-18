@@ -6,7 +6,7 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 07:44:59 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/15 12:49:06 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 10:42:00 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,17 +63,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
-/* Bonus Functions */
-
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
-t_list	*ft_lstnew(void *content);
-void	ft_lstier(t_list *lst, void (*f)(void *));
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstclear(t_list	**lst, void (*del)(void *));
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif

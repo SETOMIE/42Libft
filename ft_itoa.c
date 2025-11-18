@@ -6,42 +6,49 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:07:12 by asyeo             #+#    #+#             */
-/*   Updated: 2025/11/14 16:06:03 by asyeo            ###   ########.fr       */
+/*   Updated: 2025/11/18 12:28:46 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
 
-static	int	int_len(long nbr);
-
-char	ft_itoa(int n)
+static int	numlen(long n)
 {
-	char	*str;
-	long	num;
-	size_t	len;
+	int	len;
 
-	num = n;
-	len = int_len(num);
-	if (n < 0)
+	len = 1;
+	while (n >= 10)
 	{
-		num = -num;
+		n /= 10;
 		len++;
 	}
+	return (len);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*str;
+	int		len;
+	long	num;
+
+	num = n;
+	if (n < 0)
+		num = -num;
+	len = numlen(num) + (n < 0);
 	str = ft_calloc(len + 1, sizeof(char));
 	if (!str)
-		return (0);
+		return (NULL);
 	str[len] = '\0';
-	while (len--)
+	while (len > 0)
 	{
-		str[len] = (num % 10) + '0';
+		str[--len] = num % 10 + 48;
 		num /= 10;
 	}
 	if (n < 0)
 		str[0] = '-';
 	return (str);
 }
-
 /*
 int	main(void)
 {
